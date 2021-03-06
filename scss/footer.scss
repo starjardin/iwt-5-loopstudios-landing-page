@@ -66,3 +66,24 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: 1140px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    gap: 2rem;
+    place-content: center;
+  }
+  
+  .info {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  .info__lists {
+    display: flex;
+    flex-direction: row;
+  }
+}
