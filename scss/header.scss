@@ -31,6 +31,14 @@
   visibility: hidden;
 }
 
+[name="checkbox"]:checked ~ .header__container {
+  z-index: 22;
+  position: inherit;
+  .header__heading {
+    visibility: hidden;
+  }
+}
+
 .logo__container {
   order: 1;
 }
@@ -54,4 +62,5 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: $white;
+  visibility: visible;
 }
