@@ -1,0 +1,20 @@
+@import "variables.scss";
+
+.masthead {
+  padding-top: 20rem;
+  background-image: url("../images/mobile/image-interactive.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.masthead__paragraph {
+  color: $dark-gray;
+  text-align: center;
+}
+
+.masthead__heading {
+  text-transform: uppercase;
+  text-align: center;
+}
