@@ -1,0 +1,41 @@
+@import "variables.scss";
+
+.creation {
+  position: relative;
+  padding-bottom: 6rem;
+}
+
+.card {
+  position: relative;
+  padding: 1rem 0.5rem;
+}
+
+.creation__img-text {
+  position: absolute;
+  color: $white;
+  z-index: 4;
+  bottom: 20%;
+  left: 5%;
+  text-transform: uppercase;
+  max-width: 73px;
+  margin: 0;
+}
+
+.creation__button {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .5rem 1.5rem;
+  border: 1px solid $dark-gray;
+  text-transform: uppercase;
+}
+
+.creation__button:focus,
+.creation__button:active,
+.creation__button:hover {
+  background-color: $black;
+  color: $white;
+  border: 1px solid $dark-gray;
+  outline: none;
+}
