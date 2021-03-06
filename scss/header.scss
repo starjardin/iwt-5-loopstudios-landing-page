@@ -1,0 +1,57 @@
+@import "variables.scss";
+
+.header {
+  margin: 0;
+  background-image: url('../images/mobile/image-hero.jpg');
+  position: relative;
+  padding-bottom: 20rem;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: baseline;
+}
+
+[for="checkbox"] {
+  order: 3;
+  background-image: url('../images/icon-close.svg');
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  span {
+    visibility: hidden;
+  }
+}
+
+[name="checkbox"] {
+  order: 2;
+  visibility: hidden;
+}
+
+.logo__container {
+  order: 1;
+}
+
+.header__container {
+  margin: 0;
+}
+
+[alt="logo"] {
+  width: 50%;
+  height: 100%;
+}
+
+[alt="logo"] ~ span {
+  display: none;
+}
+
+.header__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+}

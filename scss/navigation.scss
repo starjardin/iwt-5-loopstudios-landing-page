@@ -1,0 +1,36 @@
+@import "variables.scss";
+
+.header__navigation {
+  transform: translateX(-220%);
+}
+
+[type="checkbox"]:checked ~ .header__navigation {
+  transform: none;
+  position: absolute;
+  z-index: 1;
+  background-color: $black;
+}
+
+label {
+  cursor: pointer;
+}
+
+.navigation__anchor {
+  color: $white;
+  display: block;
+  text-transform: uppercase;
+  padding: 1rem;
+} 
+
+[type="checkbox"]:checked ~ .header__navigation > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: $black;
+  background-image: none;
+}
