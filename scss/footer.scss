@@ -1,0 +1,68 @@
+@import "variables.scss";
+
+.footer {
+  background-color: $black;
+  padding-block: 4rem;
+}
+
+.footer__logo {
+  margin: auto;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.info__lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-transform: capitalize;
+    display: inline-block;
+    padding: .7rem;
+    color: $white;
+  }
+}
+
+.media__lists {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.media__anchor {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  span {
+    visibility: hidden;
+  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.facebook {
+  background-image: url("../images/icon-facebook.svg");
+}
+
+.twitter {
+  background-image: url("../images/icon-twitter.svg");
+}
+
+.instagram {
+  background-image: url("../images/icon-instagram.svg");
+}
+
+.pinterest {
+  background-image: url("../images/icon-pinterest.svg");
+}
+
+.footer__copyright {
+  color: $white;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
