@@ -44,3 +44,22 @@
   border: 1px solid $dark-gray;
   outline: none;
 }
+
+@media (min-width: $desktop) {
+  .creation__iamges-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .creatioin__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .creation__button {
+    position: initial;
+  }
+}
